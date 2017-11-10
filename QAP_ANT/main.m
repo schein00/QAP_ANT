@@ -11,4 +11,27 @@
 % Contact Info: sm.kalami@gmail.com, info@yarpiz.com
 %
 
+
+
+%%
+%		git --
+%	git add README.md
+%	git commit -m "first commit"
+% 	git push -u origin master
+
+
+test = {'bren', 'BREN';}
+
+
+for i = 1:size(test, 1)
+  res = NwTest(test(i, 2){:}, test(i, 1){:}, resultsRoot);
+  fprintf(fid, "%s,%f,%f,%f\n", res'{:});
+endfor;
+
+
+
+
+
+
+
 aco;
