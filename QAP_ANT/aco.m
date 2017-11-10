@@ -11,13 +11,16 @@
 % Contact Info: sm.kalami@gmail.com, info@yarpiz.com
 %
 
-clc;
-clear;
+
+function aco(resultFilePrefix, topology, xs, ys, baseSolution=0)
+
+%clc;
+%clear;
 close all;
 
 %% Problem Definition
 
-model=CreateModel();
+model=CreateModel(topology, xs, ys);
 
 CostFunction=@(p) MyCost(p,model);
 
@@ -123,3 +126,5 @@ plot(BestCost,'LineWidth',2);
 xlabel('Iteration');
 ylabel('Best Cost');
 grid on;
+
+endfunction;
