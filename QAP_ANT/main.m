@@ -53,7 +53,7 @@ test = {'bren', 'BREN';}
 
 for i = 1:size(test, 1)
   res = AntNew(test(i, 2){:}, test(i, 1){:}, resultsRoot);
-  fprintf(fid, "%s,%f,%f,%f\n", res'{:});
+  %fprintf(fid, "%s,%f,%f,%f\n", res'{:});
 endfor;
 
 
